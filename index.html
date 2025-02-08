@@ -2,22 +2,8 @@
 <html>
 <head>
 
-<script>
-function PlayMusic() {
-
-  var play=document.getElementById("music");
-  play.volume = 0.5;
-  play.play();
-}
-
-$(document).ready(function(){
-  setTimeout(PlayMusic,3000);
-})
-
-</script>
-
 <title>Pan's site</title>
- <audio control id ="music">
+ <audio control autoplay loop>
   <source src="audio/ThorHighHeels - Dead Department (Lunacid OST).mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio> 
