@@ -90,7 +90,10 @@ Module.expectedDataFileDownloads++;
       function assert(check, msg) {
         if (!check) throw msg + new Error().stack;
       }
-      
+      Module['FS_createPath']('/', 'assets', true, true);
+      Module['FS_createPath']('/', 'libs', true, true);
+      Module['FS_createPath']('/', 'src', true, true);
+      Module['FS_createPath']('/src', 'ui', true, true);
 
       function DataRequest(start, end, crunched, audio) {
         this.start = start;
@@ -284,6 +287,6 @@ Module.expectedDataFileDownloads++;
     }
 
   }
-  loadPackage({"package_uuid":"de0efae3-7411-4bc3-ba22-26e2b43ab0c9","remote_package_size":9606209,"files":[{"filename":"/README.md","crunched":0,"start":0,"end":186,"audio":false},{"filename":"/TODO","crunched":0,"start":186,"end":908,"audio":false},{"filename":"/button.lua","crunched":0,"start":908,"end":4507,"audio":false},{"filename":"/buttonClick.wav","crunched":0,"start":4507,"end":8071,"audio":true},{"filename":"/conf.lua","crunched":0,"start":8071,"end":8185,"audio":false},{"filename":"/green.wav","crunched":0,"start":8185,"end":27193,"audio":true},{"filename":"/highlight.wav","crunched":0,"start":27193,"end":31935,"audio":true},{"filename":"/index.html","crunched":0,"start":31935,"end":36069,"audio":false},{"filename":"/index.js","crunched":0,"start":36069,"end":9531881,"audio":false},{"filename":"/loose.wav","crunched":0,"start":9531881,"end":9557053,"audio":true},{"filename":"/main.lua","crunched":0,"start":9557053,"end":9563427,"audio":false},{"filename":"/red.wav","crunched":0,"start":9563427,"end":9582435,"audio":true},{"filename":"/win.wav","crunched":0,"start":9582435,"end":9606209,"audio":true}]});
+  loadPackage({"package_uuid":"6a4b31b2-14eb-4467-ac1b-1a95d071977b","remote_package_size":892792,"files":[{"filename":"/assets/rose-white-spritesheet-min.png","crunched":0,"start":0,"end":867177,"audio":false},{"filename":"/conf.lua","crunched":0,"start":867177,"end":867277,"audio":false},{"filename":"/libs/anim8.lua","crunched":0,"start":867277,"end":875769,"audio":false},{"filename":"/main.lua","crunched":0,"start":875769,"end":876087,"audio":false},{"filename":"/src/core.lua","crunched":0,"start":876087,"end":877025,"audio":false},{"filename":"/src/states.lua","crunched":0,"start":877025,"end":877025,"audio":false},{"filename":"/src/ui/button.lua","crunched":0,"start":877025,"end":879964,"audio":false},{"filename":"/src/ui/dialogWindow.lua","crunched":0,"start":879964,"end":887323,"audio":false},{"filename":"/src/ui/entry.lua","crunched":0,"start":887323,"end":889947,"audio":false},{"filename":"/src/ui/progressBar.lua","crunched":0,"start":889947,"end":892792,"audio":false}]});
 
 })();
